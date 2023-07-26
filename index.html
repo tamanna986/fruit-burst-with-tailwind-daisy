@@ -7,6 +7,11 @@
     <title>Fruit Burst</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
+    <!-- lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
     <!-- tailwind & daisy link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -18,17 +23,25 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
                         'color-yellow': '#FFFF00',
+                        'color-yellow': '#013220',
                     }
                 }
             }
         }
     </script>
 
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
 </head>
 
-<body class="container mx-auto">
+<body class="container mx-auto font-lato">
+
+    <!-- menue navbar section -->
     <header class="my-8 ">
         <div class="navbar lg:bg-green-700  rounded-[600px] px-12 py-3 flex flex-row-reverse   lg:flex-row ">
             <div class="  navbar-end    lg:text-white ">
@@ -75,6 +88,51 @@
                 
             </div>
         </div>
+
+        <!-- banner slider section -->
+
+        <div class="carousel container mx-auto my-20 ">
+            <div id="slide1" class="carousel-item relative w-full  bg-[url('/images/banner1.png')] bg-cover">
+                <div class="text-white flex flex-col items-center justify-center space-y-3 lg:space-y-9 m-auto px-8 ">
+                    <h1 class="font font-extrabold text-2xl lg:text-5xl text-center ">Exotic tastes at your <br> doorstep</h1>
+                    <p class="text-center  text-sm md:text-lg">We supply highly quality organic products</p>
+                    <button class="btn bg-gradient-to-r from-[#013220] to-[#FFFF00] border-none mb-10">Shop Now</button>
+                </div> 
+              
+              <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-2 right-2 md:left-5 md:right-5 top-1/2  ">
+                <a href="#slide4" class="btn btn-circle ">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+
+            <!-- slide 2 -->
+
+            <div id="slide2" class="carousel-item relative w-full bg-[url('/images/banner2.png')] bg-cover">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+
+            <!-- slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full bg-[url('/images/banner3.png')] bg-cover">
+              <!-- <img src="/images/banner3.png" class="w-full" /> -->
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+
+            <!-- slude 4 -->
+            <div id="slide4" class="carousel-item relative w-full bg-[url('/images/banner4.png')] bg-cover">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+
     </header>
 
     <main>
