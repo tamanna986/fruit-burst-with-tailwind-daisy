@@ -30,9 +30,9 @@
 
 <body class="container mx-auto">
     <header class="my-8 ">
-        <div class="navbar md:bg-green-700  rounded-[600px] px-12 py-3 ">
-            <div class="navbar-start md:text-white">
-                <div class="dropdown">
+        <div class="navbar lg:bg-green-700  rounded-[600px] px-12 py-3 flex flex-row-reverse   lg:flex-row ">
+            <div class="  navbar-end    lg:text-white ">
+                <div class="dropdown ">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -40,12 +40,12 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-20 md:w-24  ">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
-                        <div class="   relative">
+                        <div class="relative">
                             <input type="text" placeholder="Search here"  class="input input-bordered border-none rounded-3xl  w-full mt-3 max-w-xs" />
                             <img class="absolute right-3 top-6" src="images/search icon.png" alt="">
                             
@@ -53,7 +53,7 @@
                       </ul>
                       
                 </div>
-                <div class=" hidden font-medium text-lg lg:flex">
+                <div class=" hidden font-medium text-lg lg:flex mr-36">
                     <ul class="menu menu-horizontal px-1 ">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
@@ -64,11 +64,13 @@
                 
             </div>
              
-                <img src="images/logo.png" alt="">
-                <a class="btn btn-ghost normal-case text-2xl lg:text-3xl font-bold md:text-white">Fruit Burst</a>
+                <div>
+                    <img src="images/logo.png" alt="">
+                <a class="btn btn-ghost normal-case text-2xl lg:text-3xl font-bold lg:text-white">Fruit Burst</a>
+                </div>
              
             <div class=" navbar-end  lg:relative hidden lg:block">
-                <input type="text" placeholder="Search here"  class="input input-bordered border-none rounded-3xl ml-36 w-full max-w-xs" />
+                <input type="text" placeholder="Search here"  class="input input-bordered border-none rounded-3xl ml-40 w-full max-w-xs" />
                 <img class="absolute right-10 top-3" src="images/search icon.png" alt="">
                 
             </div>
