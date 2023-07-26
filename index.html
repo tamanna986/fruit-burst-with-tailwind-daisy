@@ -40,11 +40,20 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <div class="   relative">
+                            <input type="text" placeholder="Search here"  class="input input-bordered border-none rounded-3xl  w-full mt-3 max-w-xs" />
+                            <img class="absolute right-3 top-6" src="images/search icon.png" alt="">
+                            
+                        </div>
+                      </ul>
+                      
                 </div>
-                <div class="navbar-center hidden font-medium text-lg lg:flex">
+                <div class=" hidden font-medium text-lg lg:flex">
                     <ul class="menu menu-horizontal px-1 ">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
@@ -58,9 +67,9 @@
                 <img src="images/logo.png" alt="">
                 <a class="btn btn-ghost normal-case text-2xl lg:text-3xl font-bold md:text-white">Fruit Burst</a>
              
-            <div class="navbar-end   relative">
-                <input type="text" placeholder="Search here"  class="input input-bordered border-none rounded-3xl  w-full max-w-xs" />
-                <img class="absolute right-3" src="images/search icon.png" alt="">
+            <div class=" navbar-end  lg:relative hidden lg:block">
+                <input type="text" placeholder="Search here"  class="input input-bordered border-none rounded-3xl ml-36 w-full max-w-xs" />
+                <img class="absolute right-10 top-3" src="images/search icon.png" alt="">
                 
             </div>
         </div>
