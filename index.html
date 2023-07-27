@@ -39,10 +39,10 @@
 
 </head>
 
-<body class="container mx-auto font-lato">
+<body class="font-lato">
 
     <!-- menue navbar section -->
-    <header class="my-8 ">
+    <header class="my-8 container mx-auto">
         <div class="navbar lg:bg-green-700  rounded-[600px] px-12 py-3 flex flex-row-reverse   lg:flex-row ">
             <div class="  navbar-end    lg:text-white ">
                 <div class="dropdown ">
@@ -212,7 +212,7 @@
         </div>
     </header>
 
-    <main class="my-10">
+    <main class="my-10 container mx-auto">
         <!-- Deal of the day section -->
         <section class="my-0 lg:my-32 mx-16 lg:mx-0 ">
             <div class="flex flex-col gap-10 lg:flex-row  lg:gap-x-80 ">
@@ -418,20 +418,30 @@
                     <img class="w-20" src="images/fruit8.png" alt="">
                     <h4 class="font-extrabold text-xl">12.90$ - 18.85$</h4>
                     <p>Red Dragon</p>
-                    <div class="rating rating-half ">
+<div class="rating rating-half ">
 
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1"
-                            checked />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                    </div>
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-1" checked  />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10"
+                                        class="bg-green-500 mask mask-star-2 mask-half-2" />
+                                </div>
+
 
                     <!--  modal button -->
                     <button class="btn text-green-600 border-none bg-opacity-5 capitalize"
@@ -722,9 +732,38 @@
         </section>
     </main>
 
-    <footer>
+    <!-- footer section -->
 
-    </footer>
+    <footer class="footer footer-center p-10 bg-black text-base-content rounded text-white py-10 md:py-16 lg:py-20 flex flex-col items-center justify-center ">
+ 
+        <div class="flex  items-center justify-center">
+            <img class="w-10" src="images/logo.png" alt="">
+            <h2 class="font-semibold  text-xl md:text-3xl">Fruit Burst</h2>
+
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+          <a class="link link-hover">Home</a> 
+          <a class="link link-hover">About Us</a> 
+          <a class="link link-hover">Shop</a> 
+          <a class="link link-hover">All Fruits</a> 
+          <a class="link link-hover">Support</a> 
+          <a class="link link-hover">My Account</a>
+        </div> 
+        <div>
+          <div class="grid grid-flow-col gap-8 justify-center items-center">
+            <a><img class="w-8" src="images/twitter a.png" alt=""></a>
+            <a><img class="w-8" src="images/facebook a.png" alt=""></a> 
+            <a><img class="w-8" src="images/yt.png" alt=""></a> 
+            <a><img class="w-7" src="images/instagram a.png" alt=""></a> 
+            <a><img class="w-8" src="images/linkedin a.png" alt=""></a> 
+            <a><img class="w-8" src="images/apple a.png" alt=""></a> 
+             
+
+          </div>
+        </div> 
+
+      </footer>
 </body>
 
 </html>
